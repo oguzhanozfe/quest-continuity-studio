@@ -1,0 +1,13 @@
+digraph playthroughs {
+  rankdir=LR;
+  subgraph cluster_0 {
+    label="Enter relay";
+    g0s0 [label="(empty)"];
+    g0s1 [label="badge"];
+    g0s2 [label="badge, power"];
+    g0s3 [label="badge, power, gate_open"];
+    g0s0 -> g0s1 [label="Collect badge"];
+    g0s1 -> g0s2 [label="Restore power"];
+    g0s2 -> g0s3 [label="Open gate"];
+  }
+}

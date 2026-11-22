@@ -1,0 +1,81 @@
+{
+  "flags": [
+    "badge",
+    "power",
+    "gate_open",
+    "sealed"
+  ],
+  "initial": [],
+  "actions": [
+    {
+      "id": "Collect badge",
+      "set": [
+        "badge"
+      ]
+    },
+    {
+      "id": "Restore power",
+      "requires": [
+        "badge"
+      ],
+      "set": [
+        "power"
+      ]
+    },
+    {
+      "id": "Open gate",
+      "requires": [
+        "power"
+      ],
+      "forbids": [
+        "sealed"
+      ],
+      "set": [
+        "gate_open"
+      ]
+    },
+    {
+      "id": "Seal chamber",
+      "requires": [
+        "gate_open"
+      ],
+      "set": [
+        "sealed"
+      ],
+      "clear": [
+        "gate_open"
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "id": "Enter relay",
+      "requires": [
+        "gate_open"
+      ]
+    },
+    {
+      "id": "Seal chamber safely",
+      "requires": [
+        "sealed"
+      ],
+      "forbids": [
+        "gate_open"
+      ]
+    },
+    {
+      "id": "Open sealed gate",
+      "requires": [
+        "sealed",
+        "gate_open"
+      ]
+    },
+    {
+      "id": "Initial quiet",
+      "forbids": [
+        "power",
+        "sealed"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "action": "Export playthrough for Enter relay",
+  "id": "proof:Enter relay",
+  "linked_source_records": [
+    "initial",
+    "goal:Enter relay",
+    "action:Collect badge",
+    "action:Restore power",
+    "action:Open gate"
+  ],
+  "choices": {
+    "proof:Enter relay": ""
+  },
+  "artifacts": {
+    "playthrough-proofs.json": {
+      "sha256": "a90a1cc4d6fa1de90c4b806d81425584f977d1d1092c3b5da0157b1eab4b21d7",
+      "changed_by_approval": true
+    },
+    "playthroughs.dot": {
+      "sha256": "33dce5aef623137af00c705a4a7f1eadfb1dbdebf3848fac85427466f1bdf7d3",
+      "changed_by_approval": true
+    }
+  }
+}

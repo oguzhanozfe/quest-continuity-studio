@@ -1,0 +1,44 @@
+{
+  "goals": [
+    {
+      "goal": "Enter relay",
+      "initial": [],
+      "final": [
+        "badge",
+        "power",
+        "gate_open"
+      ],
+      "steps": [
+        {
+          "action": "Collect badge",
+          "before": [],
+          "after": [
+            "badge"
+          ]
+        },
+        {
+          "action": "Restore power",
+          "before": [
+            "badge"
+          ],
+          "after": [
+            "badge",
+            "power"
+          ]
+        },
+        {
+          "action": "Open gate",
+          "before": [
+            "badge",
+            "power"
+          ],
+          "after": [
+            "badge",
+            "power",
+            "gate_open"
+          ]
+        }
+      ]
+    }
+  ]
+}
