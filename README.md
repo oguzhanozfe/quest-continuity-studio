@@ -2,11 +2,13 @@
 
 Explore quest flags and prerequisites, then export approved shortest playthrough proofs.
 
-[![Verify](https://github.com/oguzhanozfe/quest-continuity-studio/actions/workflows/check.yml/badge.svg)](https://github.com/oguzhanozfe/quest-continuity-studio/actions/workflows/check.yml) · [Deploy to Render](https://render.com/deploy?repo=https://github.com/oguzhanozfe/quest-continuity-studio) · [Input guide](GUIDE.md)
+**[Open the live demo](https://oguzhanozfe.github.io/quest-continuity-studio/)** · [![Verify](https://github.com/oguzhanozfe/quest-continuity-studio/actions/workflows/check.yml/badge.svg)](https://github.com/oguzhanozfe/quest-continuity-studio/actions/workflows/check.yml) · [Deploy to Render](https://render.com/deploy?repo=https://github.com/oguzhanozfe/quest-continuity-studio) · [Input guide](GUIDE.md)
 
 Can the player actually finish a branching quest? Replay the shortest sequence of actions that reaches a goal, or inspect the closest reachable state when it is impossible.
 
 ![Example result for Quest Continuity Studio](docs/result.png)
+
+The live demo lets you edit the input, search proposed changes with an on-device model and download the result. [Browser demo details](demo/DEMO.md)
 
 ## Try it
 

@@ -1,0 +1,19 @@
+{
+  "model": "gemma-4-e4b-it",
+  "provider": "local",
+  "source_sha256": "e0fed8d26db3001bf3d3010aa5e515256b04e51b1ef1ac6f50f64340803316e3",
+  "considered": 3,
+  "total": 3,
+  "recommendations": [
+    {
+      "id": "proof:Enter relay",
+      "evidence_id": "goal:Enter relay",
+      "why": "This proposal requires 'gate_open' as a prerequisite, and reviewers should verify if any available transition allows this flag to be set from the initial state."
+    },
+    {
+      "id": "proof:Seal chamber safely",
+      "evidence_id": "goal:Seal chamber safely",
+      "why": "The goal requires achieving 'sealed', and it must be verified that an action exists to transition into this required final state from the initial conditions."
+    }
+  ]
+}
